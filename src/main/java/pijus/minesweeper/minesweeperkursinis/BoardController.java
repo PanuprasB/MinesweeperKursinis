@@ -62,7 +62,7 @@ public class BoardController {
     private void updateUI() {
         for (int x = 0; x < width; x++) {
             for (int y = 0; y < height; y++) {
-                Button button = (Button) gridPane.getChildren().get(x * height + y);
+                Button button = (Button) gridPane.getChildren().get(x * width + y);
                 Tile tile = board.getTile(x, y);
 
                 if (board.isGameOver()) {
